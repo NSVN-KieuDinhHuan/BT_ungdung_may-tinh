@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cacultor</title>
+</head>
+<body>
+<!--<form>-->
+    <input  id="a" type="text" style=" width: 100px">
+    <input  id="b" type="text" style=" width: 100px">
+    <br>
+    <br>
+    <button onclick="add()">Addition(+)</button>
+    <button onclick="sub()">Addition(-)</button>
+    <button onclick="muti()">Multiplication(x)</button>
+    <button onclick="divi()">Division(/)</button>
+<!--</form>-->
+<p id="res"> </p>
+<script>
+    function add() {
+        let a=parseFloat(document.getElementById("a").value)
+        let b=parseFloat(document.getElementById("b").value)
+        let c=a+b
+        document.getElementById("res").innerHTML= "Result Addition(+): " + c
+    }
+    function sub() {
+        let a=parseFloat(document.getElementById("a").value)
+        let b=parseFloat(document.getElementById("b").value)
+        let c=a-b
+        document.getElementById("res").innerHTML= "Result Addition(-): " + c
+    }
+    function muti() {
+        let a=parseFloat(document.getElementById("a").value)
+        let b=parseFloat(document.getElementById("b").value)
+        let c=a*b
+        document.getElementById("res").innerHTML= "Result Multiplication (x): " + c
+    }
+    function divi() {
+        let a=parseFloat(document.getElementById("a").value)
+        let b=parseFloat(document.getElementById("b").value)
+        let c=a/b
+        document.getElementById("res").innerHTML= "Result Division(/): " + c
+    }
+
+</script>
+</body>
+</html>
